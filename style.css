@@ -66,11 +66,12 @@ li {
     }
 
 
-    .personal,
-    .business,
-    .developer,
-    .learn {
+    .personal a,
+    .business a,
+    .developer a,
+    .learn a {
         margin-left: 30px;
+        color: #7B91B1;
     }
 
     /* dropdown styles */
@@ -264,26 +265,15 @@ li {
         font-weight: 600;
         border-radius: 7px;
     }
-    /* home secton */
-    .home-section {
-        
-    }
+
     /*   heroes styles */
-    .heroes-img1,
-    .heroes-img2,
-    .heroes-img3 {
-        position: absolute; 
-        left: 65px;
+    .heroes-img1 {
+        margin-left: 65px;
         margin-top: 50px;
         max-width: 520px;
-
-
-    }
-    .heroes-container {
-        max-width: 100%;
-        display: flex;
     }
     .heroes-innerbox {
+        margin-right: 21rem;
         background-color: #FFF6ED;
         height:56rem;
         width: 23rem;
@@ -291,7 +281,7 @@ li {
     .heroes-outerbox {
         position: absolute;
         left: 20rem;
-        margin: 39rem 0 0 0;
+        top:45rem;
         padding: 20px;
         width: 19.7rem;
         background-color: #ffffff;
@@ -302,6 +292,7 @@ li {
     .heroes-text {
         margin-top: 20px;
         display: flex;
+        font-size: 14px;
         justify-content: space-between;
         max-width: 23rem;
     }
@@ -312,31 +303,56 @@ li {
         color: black;
         opacity: 0.8;
     }
-    .heroes {
+    .heroes-wrap {
         display: flex;
+        justify-content: space-between;
     }
     /* heroes switch */
-
-    .heroes-switch {
-        margin-left: 20px;
-        display: flex;
-        align-items: center;
-    
-    }
-     .heroes-click3:checked~.heroes-3 {
-        visibility: hidden;
-    }
     .heroes-checkimg {
-        max-width: 37px;
+        height: 49px;
+        width: 45px;
     }
+
     .heroes-checks {
-        position: absolute;
-        left: 45px;
-        margin-top:51rem;   
+        gap: 15px;
+        margin:35px 0 0 59px; 
         display: flex;
         max-width: 12rem;
     }
+    /* registerion style */
+    .register {
+        margin: 9rem 15px 0 0;
+        
+    }
+    .register h2 {
+        font-size: 85px;
+        color: #022B69;
+    }
+    .register p {
+        font-size: larger;
+        font-weight: 100;
+        color: #7B91B1;
+        margin: 30px 0;
+    }
+    #email {
+        padding: 16px 9rem 16px 15px;
+        border-radius: 8px;
+        border-color:#EBEDF2 ;
+        border-width: thin;
+    }
 
+    .email-signup button {
+        margin-left: 10px;
+        padding: 16px 25px;
+        border-radius: 8px;
+        background: #0066F5;
+        border: none;
+        font-weight: 800;
+        color: #fff;
+    }
+    .email-signup button:hover {
+        box-shadow: inset ;
+    }
 }
 
 @media screen and (max-width:981px) {
