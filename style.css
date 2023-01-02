@@ -424,7 +424,7 @@ li {
         -webkit-transform: rotate(-45deg);
       }
       .savings-png {
-        position: absolute;
+        position: relative;
         margin-top:32px ;
         max-width: 530px;
         transition: 0.5s ease;
@@ -435,7 +435,7 @@ li {
 
       .savings-png2 {
         opacity: 0;
-        position: relative;
+        position: absolute;
         max-width: 320px;
         transform: translate(25%);
         margin-top: 6.3rem;
